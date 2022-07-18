@@ -817,9 +817,7 @@ a {
 }
 
 @media screen and (max-width: 1117px) {
-  body {
-    overflow-x: hidden;
-  }
+
   .content {
     max-width: 850px;
     padding-left: 0;
