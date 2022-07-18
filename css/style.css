@@ -104,10 +104,6 @@ a {
   margin: 10px 0 34px;
 }
 
-.header {
-  overflow: hidden;
-}
-
 .header__ellipse {
   position: absolute;
   content: '';
@@ -830,9 +826,6 @@ a {
 }
 
 @media screen and (max-width: 1117px) {
-  body {
-    overflow-x: hidden;
-  }
   .content {
     max-width: 850px;
     padding-left: 0;
@@ -1068,7 +1061,7 @@ a {
   }
 }
 
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 468px) {
   .button {
     display: -webkit-box;
     display: -ms-flexbox;
