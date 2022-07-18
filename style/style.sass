@@ -1,0 +1,795 @@
+$bg: #060523
+$white: #FFFFFF
+
+
+@import font
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+body
+    background: $bg
+    color: $white
+    font-family: 'Stolzl'
+body::-webkit-scrollbar 
+  width: 5px
+
+ 
+body::-webkit-scrollbar-track 
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+
+ 
+body::-webkit-scrollbar-thumb 
+  background-color: #940076
+  outline: 1px solid #940076
+
+a
+    text-decoration: none
+    color: $white
+.content
+    max-width: 1200px
+    width: 100%
+    margin: 0 auto
+    padding-left: 120px
+    position: relative
+.title-h2
+    font-style: normal
+    font-weight: 400
+    font-size: 32px
+    line-height: 110%
+    letter-spacing: -0.01em
+
+.title
+    margin-top: 107px
+    font-weight: 400
+    font-size: 70px
+    line-height: 110%
+    letter-spacing: -0.03em
+    color: #F3F3F3
+    font-family: Stolzl
+    
+    span
+        display: flex
+        margin-left: 187px
+        margin-bottom: 35px
+        margin-top: 20px
+.button
+    display: inline-block
+    background: #940076
+    border-radius: 20px
+    padding: 33px 53px
+    font-weight: 400
+    font-size: 24px
+    line-height: 140%
+    letter-spacing: -0.03em
+.header .content
+    background-image: url(../img/monkey.png)
+    background-repeat: no-repeat
+    background-position: right bottom
+    padding-bottom: 41px   
+.subtitle
+    max-width: 487px
+    font-family: 'IBM Plex Mono'
+    font-weight: 400
+    font-size: 20px
+    line-height: 110%
+    letter-spacing: -0.01em
+    &:nth-child(4)
+        margin: 10px 0 34px    
+.header   
+    overflow: hidden
+    
+    &__ellipse
+        position: absolute
+        content: ''
+        width: 706px
+        height: 706px
+        right: 0
+        top: 17px
+        background: #1B045E
+        filter: blur(300px)
+    &__data
+        font-family: Stolzl
+        background: #5C0AB1
+        padding-left: 120px
+        left: 0
+        
+        width: 294px
+        height: 76px
+        display: flex
+        font-weight: 400
+        font-size: 32px
+        line-height: 110%
+        align-items: left
+        flex-direction: column
+        letter-spacing: -0.03em
+        position: absolute
+        top: 93px
+
+.info
+    background: linear-gradient(90.81deg, #BB0195 0.18%, #5A0AB1 100%)
+    padding: 10px 0
+    .content
+        display: flex
+        justify-content: space-between
+    &__block
+        &:nth-child(2)
+            margin: 0 96px 0 41px
+    &__title
+        margin-bottom: 20px
+        font-weight: 400
+        font-size: 36px
+        line-height: 110%
+        letter-spacing: -0.01em
+    &__description
+        font-family: 'IBM Plex Mono'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 110%
+        letter-spacing: -0.01em
+
+.ether
+    padding-top: 131px
+    padding-bottom: 187px
+    &__block
+        display: flex
+        margin-bottom: 49px
+    &__video
+        background-image: url('../img/bg_video.png')
+        background-repeat: no-repeat
+        background-position: center center
+        width: 461px
+        height: 281px
+    &__description
+        margin-left: 38px
+        
+    &__title
+        width: 430px
+        font-weight: 400
+        font-size: 32px
+        line-height: 110%
+        letter-spacing: -0.01em
+    &__text
+        width: 537px
+        font-family: 'IBM Plex Mono'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 180%
+        letter-spacing: -0.01em
+        padding-top: 33px
+    &__call
+        display: flex
+        align-items: center
+        &-text
+            font-family: 'IBM Plex Mono'
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            line-height: 110%
+
+            letter-spacing: -0.01em
+            span
+                margin-top: 10px
+                display: flex
+                background: linear-gradient(90.38deg, #BA0196 -0.45%, #5C0AB1 101.61%);
+                position: relative
+                &::before
+                    position: absolute
+                    right: -24px
+                    top: -5px
+                    content: ''
+                    width: 0
+                    height: 0
+                    transform: rotate(90deg)
+                    border-left: 20px solid transparent
+                    border-right: 20px solid transparent
+                    border-bottom: 30px solid #BA0196
+        &-button
+            margin-left: 31px
+
+.bg-ellipse
+    position: absolute
+    max-width: 570px
+    width: 100%
+    height: 590px
+    right: 0
+    bottom: 70%
+    background: #510053
+    filter: blur(230px)
+    z-index: -2
+    &-img
+        display: block
+        background: url('../img/cripto.png')
+        width: 300.57px
+        height: 313.57px
+        position: absolute
+        background-repeat: no-repeat
+        background-position: top right
+        bottom: 80%
+        right: 0
+        z-index: -1
+.user
+    position: relative
+    padding-bottom: 142px
+    &__title
+        margin-bottom: 51px
+    &__block
+        display: flex
+        justify-content: space-between
+        &-title
+            padding: 20px 0 10px
+            text-align: center
+            font-weight: 400
+            font-size: 22px
+            line-height: 150%
+            letter-spacing: -0.03em
+        &-description
+            font-family: 'IBM Plex Mono'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 170%
+            letter-spacing: -0.03em
+            color: #F3F3F3
+            opacity: 0.8
+        &-item
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &:nth-child(2)
+                margin: 0 40px 
+.speakers
+    padding-bottom: 170px
+    &__title
+        margin-bottom: 96px
+        text-align: center
+
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &__exp
+        position: absolute
+        top: 90px
+        left: 50%
+        transform: translateX(-50%)
+        line-height: 150%
+        text-align: center
+        letter-spacing: -0.03em
+        &::before
+            position: absolute
+            content: ''
+            background: url('../img/arrow.png')
+            width: 75px
+            height: 7px
+            right: -90px
+        &::after
+            position: absolute
+            content: ''
+            background: url('../img/arrow.png')
+            width: 75px
+            height: 7px
+            left: -90px
+            transform: rotate(-180deg)
+        &-subtitle
+            font-weight: 300
+            font-size: 16px  
+        &-title
+            font-weight: 400
+            font-size: 20px
+    &__block
+        display: flex
+        justify-content: space-between
+        position: relative
+        &-item
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-img
+            display: flex
+            align-items: center
+            justify-content: center  
+            max-width: 409px
+            width: 100%
+            position: relative
+            &::after
+                position: absolute
+                content: ''
+                width: 100%
+                height: 372px
+                background: #510053
+                filter: blur(130px)
+                z-index: -1
+            &::before
+                position: absolute
+                content: ''
+                background: url('../img/spikers_img.png')
+                width: 100%
+                height: 118px
+                top: 223px
+                left: -50px
+                z-index: 9
+
+            img
+                position: relative
+                
+        &-title
+            z-index: 9
+            padding: 11px 0 20px
+            font-weight: 400
+            font-size: 20px
+            line-height: 150%
+            text-align: center
+            letter-spacing: -0.03em
+        &-description
+            font-family: 'IBM Plex Mono'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 170%
+            width: 382px
+            letter-spacing: -0.03em
+            color: #F3F3F3
+
+            opacity: 0.8
+    &__social
+        padding-top: 22px
+        display: flex
+        justify-content: center
+        &-link
+            &:nth-child(2)
+                margin: 0 22px
+            img
+                width: 48px
+                height: 48px
+
+.timetable
+    position: relative
+    &__title
+        padding-bottom: 138px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        position: relative
+    &__item
+        width: 265px
+        height: 349px
+        background: rgba(217, 217, 217, 0.07)
+        backdrop-filter: blur(10px)
+        border-radius: 50px
+        margin-right: 83px
+        margin-bottom: 69px
+        padding: 48px 18px 0
+        &-number
+            font-weight: 400
+            font-size: 22px
+            line-height: 150%
+            letter-spacing: -0.03em
+            padding-bottom: 55px
+            padding-left: 7px
+        &-description
+            font-family: 'IBM Plex Mono'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 170%
+            letter-spacing: -0.03em
+            color: #F3F3F3
+    &__button
+        align-items: center
+        margin-bottom: 161px
+        display: flex
+        justify-content: center
+.bitcoin
+    position: absolute
+    background-image: url('../img/bitcoin.png')
+    width: 300px
+    height: 313px
+    left: 50%
+    bottom: 5%
+    transform: translate(-50%,-50%)
+    &__elipse
+        position: absolute
+        width: 520px
+        height: 520px
+        left: 50%
+        top: 70%
+        transform: translate(-50%,-50%)
+
+        background: #150095
+        filter: blur(300px)
+        z-index: -1
+    
+
+.ellipse-img
+    position: absolute
+    background-image: url('../img/ellips.png')
+    max-width: 512px
+    width: 100%
+    height: 482.27px
+    right: 0
+    top: 0
+    background-repeat: no-repeat
+    background-position: center right -25%
+    z-index: -1
+    &__bg
+        position: absolute
+        max-width: 968px
+        width: 100%
+        height: 968px
+        right: 0
+        top: -50%
+        background: #36075A
+        filter: blur(200px)
+        z-index: -2
+
+.ellipse-imgblue
+    position: absolute
+    background-image: url('../img/ellips2.png')
+    max-width: 644.22px
+    width: 100%
+    height: 661.5px
+    left: 0
+    bottom: -15%
+    background-repeat: no-repeat
+    z-index: -1
+    &__bg
+        position: absolute
+        max-width: 836px
+        width: 100%
+        height: 836px
+        left: -50%
+        bottom: -15%
+        background: #1B045E
+        filter: blur(200px)
+        z-index: -2
+
+.bonuse
+    background: rgba(217, 217, 217, 0.07)
+    backdrop-filter: blur(100px)
+    border-radius: 70px
+    margin: 0 98px
+    padding: 49px 117px 
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    margin-bottom: 119px
+    &__title
+        font-weight: 400
+        font-size: 40px
+        line-height: 140%
+        text-align: center
+        letter-spacing: -0.03em
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            width: 102px
+            height: 105px
+            background: url('../img/bonus.png')
+            left: -132px
+            top: -30px
+    &__description
+        font-weight: 400
+        font-size: 20px
+        line-height: 140%
+        text-align: center
+        letter-spacing: -0.03em
+        padding-top: 42px
+        width: 520px
+.faq
+    position: relative
+    background-image: url('../img/resurse.png')
+    background-repeat: no-repeat
+    background-position: top -13% right 5%
+    &__title
+        margin-bottom: 163px
+        width: 697px
+    &__list
+        position: relative
+        display: grid
+        gap: 65px
+        grid-template-areas: "A A A A" "B B C С" "B B C С"
+        margin-bottom: 127px
+        &-item
+            width: 460px
+            background: rgba(217, 217, 217, 0.07)
+            backdrop-filter: blur(30px)
+            border-radius: 50px
+            padding: 34px 0 21px 
+
+            &:nth-child(1)
+                grid-area: A
+            &:nth-child(2)
+                grid-area: B
+            &:nth-child(3)
+                grid-area: C
+                
+        &-title
+            padding: 0 25px 19px 21px
+            font-style: normal
+            font-weight: 400
+            font-size: 22px
+            line-height: 150%
+            letter-spacing: -0.03em
+        &-description
+            padding: 0 18px 0 13px
+            font-family: 'IBM Plex Mono'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 170%
+            letter-spacing: -0.03em
+
+            color: #F3F3F3
+
+            opacity: 0.8
+
+.footer
+    padding-top: 401px
+    position: relative
+    padding-bottom: 91px
+    overflow: hidden
+    background-image: url('../img/footer.png')
+    background-repeat: no-repeat
+    background-position: bottom right
+    &__block
+        display: flex
+        margin-top: 22px
+        padding-left: 29px
+        font-family: 'IBM Plex Mono'
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 170%
+        letter-spacing: -0.03em
+        opacity: 0.8
+    &__link
+        display: inline-block
+        margin-left: 91px
+    &__ellipse
+        z-index: -1
+        position: absolute
+        width: 1641.25px
+        height: 528.31px
+        left: 0
+        bottom: -60%
+
+        background: linear-gradient(90.36deg, rgba(30, 67, 162, 0.8) 9.63%, rgba(145, 13, 145, 0.8) 86.36%)
+        filter: blur(250px)
+        transform: rotate(-0.93deg)
+
+@media screen and (max-width: 1117px)
+    body
+        overflow-x: hidden
+    .content
+        max-width: 850px
+        padding-left: 0
+    .title span
+        margin-left: 302px
+        
+    .user
+        
+        &__block
+            align-items: start
+            &-img
+                img
+                    width: 200px
+            &-item:nth-child(2)
+                margin: 0 20px
+    .speakers
+        &__exp
+            &::before
+                width: 53px
+                right: -61px
+                background-size: contain
+            &::after
+                width: 53px
+                left: -61px
+                background-size: contain
+        &__block
+            align-items: start
+            &-img
+                img
+                    width: 271px
+                &::before
+                    top: 201px
+            &-description
+                width: 298px
+                height: 244px
+    .timetable
+        &__item
+            margin-right: 0
+    .faq
+        background-position: top -13% right -34%
+        &__list-item
+            width: 390px
+    .ellipse-img__bg, .bg-ellipse
+        width: 100%
+        right: 0
+
+@media screen and (max-width: 881px)
+    .content
+        padding: 0 25px
+    .title span
+        margin-left: 219px
+    .subtitle
+        width: 360px
+    .header
+        .content
+            background-position: right -61% bottom
+
+        &__data
+            padding-left: 48px
+            width: 226px
+            height: 76px
+    .info
+        padding: 30px 0
+        .content
+            flex-direction: column
+        &__block:nth-child(2)
+            margin: 40px 0
+    .ether
+        &__title
+            width: 100%
+        &__block
+            flex-direction: column
+        &__video
+            margin-bottom: 20px
+            width: 100%
+        &__description
+            margin-left: 0
+        &__text
+            width: 100%
+        &__call
+            flex-direction: column
+            align-items: flex-start
+            &-text
+                margin-bottom: 20px
+            &-button
+                margin-left: 0
+    .user
+        &__block
+            flex-direction: column
+            &-img
+                img
+                    width: 100%
+            &-item
+                &:nth-child(2)
+                margin: 40px 0
+    .bg-ellipse
+        width: 100%
+        right: 0
+        bottom: 93%
+        &-img
+            bottom: 96%
+    .ellipse-img
+        top: -292px
+        &__bg
+            width: 100%
+            right: 0
+    .speakers
+        &__block
+            flex-direction: column
+            &-description
+                width: 100%
+                height: auto
+            &-item
+                margin-bottom: 40px
+            &-img
+                &::before
+                    top: 89%
+                    left: -71px
+                img
+                    max-width: 265px
+                    width: 100%
+        &__exp
+            display: none
+    .timetable__item
+        width: 100%
+        height: 285px
+    .bitcoin
+        bottom: 40%
+        &__elipse
+            top: 40%
+            width: 100%
+    .bonuse
+        margin: 0 10px 119px 10px
+        padding: 49px 21px
+        &__description
+            width: 100%
+    .faq
+        background-position: top 33% right 108%
+        &__title
+            width: 100%
+            margin-bottom: 55px
+        &__list
+            grid-template-areas: 'A A A A' 'B B B B' 'C C C C'
+            &-item
+                width: 100%
+    .footer
+        padding-top: 180px
+        background-size: contain
+        &__block
+            flex-direction: column
+            align-items: center
+            padding-left: 0
+        &__link
+            margin-left: 0
+            margin-top: 20px
+        &__ellipse
+            width: 100%
+            filter: blur(62px)
+    .ellipse-imgblue
+        width: 100%
+        &__bg
+            width: 100%
+
+@media screen and (max-width: 368px)
+    .button
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 33px 0
+        width: 100%
+        font-size: 18px
+    .header
+        .content
+            background-position: bottom right -155px
+            background-size: contain
+        &__data
+            top: 32px
+    .user
+        padding-bottom: 40px
+    .bg-ellipse-img
+        bottom: 83%
+        right: -30%
+    .ellipse-imgblue
+        left: -49%
+    .title-h2
+        font-size: 24px
+    .timetable__button
+        margin-bottom: 19px
+    .timetable__title
+        padding-bottom: 40px
+    .speakers__title
+        margin-bottom: 40px
+    .ether
+        padding-bottom: 100px
+    .bonuse
+        margin-top: 90px
+        &__description
+            font-size: 16px
+        &__title
+            &::after
+                left: 9px
+                top: -91px
+    .title
+        font-size: 45px
+        padding-top: 141px
+        margin: 0
+        span
+            margin-left: 0
+    .subtitle
+        width: 100%
+    .ether
+        &__video
+            height: 171px
+            background-size: contain
+        &__title
+            font-size: 28px
+    .speakers
+        padding-bottom: 11px
+    .timetable
+        &__item
+            height: auto
+            padding-bottom: 40px
+    .faq__list-description
+        padding: 0 20px
